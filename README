@@ -1,0 +1,89 @@
+# 👐 ASL Translator – Real-Time American Sign Language Letter Recognition
+
+This project converts American Sign Language (ASL) hand gestures into readable text in real time using 
+computer vision and machine learning. It uses a webcam feed, detects hand landmarks, extracts features, and predicts the signed letter on-screen.
+
+---
+
+## 🚀 Features
+- Real-time hand tracking and landmark detection  
+- Recognizes ASL letters A–Z  
+- Machine learning model trained on a custom dataset  
+- Works with any webcam  
+- Fast inference using a lightweight model  
+- Built with Python, OpenCV, and scikit-learn  
+
+---
+
+## 🧰 Tech Stack
+- Python  
+- OpenCV  
+- Mediapipe  
+- Scikit-Learn  
+- NumPy  
+- Joblib  
+
+---
+
+## 📂 Project Structure
+
+- collect_data.py – record ASL letter images  
+- features.py – extract hand landmark features  
+- train_model.py – train the ML model  
+- realtime_predict.py – **main script** for real-time translation  
+- hand_viewer.py – visualize hand landmarks  
+- asl_letters_model.joblib – trained model file  
+- output.txt – prediction logs  
+- X.npy, y.npy and related files – saved dataset and splits  
+
+---
+
+## ▶️ How to Run the Translator
+
+### Clone the repository:
+git clone https://github.com/DhirChampaneri/asl-translator.git  
+cd asl-translator  
+
+### Install dependencies:
+pip install -r requirements.txt  
+
+### Run the real-time translator:
+python realtime_predict.py  
+
+A webcam window will appear — perform ASL signs to see the predicted letters.
+
+---
+
+## 🧠 Model Training
+
+To retrain the model or collect new data:
+
+### Collect new data:
+python collect_data.py  
+
+### Train the model:
+python train_model.py  
+
+This generates a new asl_letters_model.joblib file.
+
+---
+
+## 🎥 Demo
+
+[COMING SOON – Demo Video]
+
+---
+
+## 📌 Future Improvements
+
+- Support for full-word recognition  
+- Predicting full sentences  
+- GUI interface (Tkinter / PyQt)  
+- Mobile app deployment  
+
+---
+## 👤 Author
+
+Dhir Champaneri 
+📍 Toronto, Canada  
+🔗 GitHub: https://github.com/DhirChampaneri
